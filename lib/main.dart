@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shop_phone1/Cat/cat.dart';
+import 'package:shop_phone1/cart/cart.dart';
+import 'package:shop_phone1/home/home.dart';
 import 'package:shop_phone1/onborde/onborde1.dart';
 
 void main() {
@@ -12,8 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
-      home: OnBorde1(),
-    );
+      debugShowCheckedModeBanner: false, 
+      routes: {
+        "home": (context) => Home(),
+        "cat": (context) => Cat(),
+        "cart": (context) => Cart(),
+      },
+      home: OnBorde1());
   }
 }

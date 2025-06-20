@@ -48,7 +48,7 @@ class _OnBorde1 extends State<OnBorde1> {
               SizedBox(height: 20),
               InkWell(
                 onTap: () {
-                  print("Button Pressed");
+                  Navigator.of(context).pushNamed("home");
                 },
 
                 child: Container(
